@@ -1,0 +1,41 @@
+* Hostname in DNS cache was stale, zapped
+*   Trying 202.6.215.234...
+* TCP_NODELAY set
+* Connected to devapi.klikbca.com (202.6.215.234) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: /etc/ssl/certs
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server accepted to use http/1.1
+* Server certificate:
+*  subject: C=ID; L=Jakarta; O=PT Bank Central Asia Tbk; OU=Group Strategic Information Technology; CN=devapi.klikbca.com
+*  start date: Jan 12 00:00:00 2016 GMT
+*  expire date: Mar 20 12:00:00 2019 GMT
+*  subjectAltName: host "devapi.klikbca.com" matched cert's "devapi.klikbca.com"
+*  issuer: C=US; O=DigiCert Inc; CN=DigiCert SHA2 Secure Server CA
+*  SSL certificate verify ok.
+> GET /banking/v3/corporates/h2hauto008/accounts/0033002847 HTTP/1.1
+Host: devapi.klikbca.com
+Accept: */*
+Content-Type: application/json
+Authorization: Bearer xrDbCJGxdYOD8tmxbvvFpRogxjH0Qr1egXdg7DjJK2bTuRYfdwKyYc
+X-BCA-Key: dcc99ba6-3b2f-479b-9f85-86a09ccaaacf
+X-BCA-Timestamp: 2018-11-29T13:38:05.000+07:00
+X-BCA-Signature: a132dcbd0febba57d20c4a4134b7af643b8374f817f31ecd217567b5eb0dcd72
+
+< HTTP/1.1 200 OK
+< X-Rate-Limit: [{"window":37313,"type":"throttle","remaining":9467}]
+< Max-Forwards: 19
+< Via: 1.0 DEVEAIAPIGW (), 1.0 DEVEAIAPIGW ()
+< Connection: close
+< X-CorrelationID: Id-4e89ff5b58fab16201f371cd 0; Id-4e89ff5b5afa16246826e453 0
+< Date: Thu, 29 Nov 2018 06:38:06 GMT
+< Server: Oracle-HTTP-Server-11g
+< X-ORACLE-DMS-ECID: 0002nGRz3Vq7U8QLyaXBiW0000WA000JYT
+< X-ORACLE-DMS-RID: 0:1
+< Content-Type: application/json
+< 
+* Curl_http_done: called premature == 0
+* Closing connection 0

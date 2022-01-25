@@ -1,0 +1,44 @@
+* Hostname devapi.klikbca.com was found in DNS cache
+*   Trying 202.6.215.234...
+* TCP_NODELAY set
+* Connected to devapi.klikbca.com (202.6.215.234) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: /etc/ssl/certs
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server accepted to use http/1.1
+* Server certificate:
+*  subject: C=ID; L=Jakarta; O=PT Bank Central Asia Tbk; OU=Group Strategic Information Technology; CN=devapi.klikbca.com
+*  start date: Jan 12 00:00:00 2016 GMT
+*  expire date: Mar 20 12:00:00 2019 GMT
+*  subjectAltName: host "devapi.klikbca.com" matched cert's "devapi.klikbca.com"
+*  issuer: C=US; O=DigiCert Inc; CN=DigiCert SHA2 Secure Server CA
+*  SSL certificate verify ok.
+> GET /banking/v3/corporates/h2hauto008/accounts/0611102380%2C0611102355%2C0611102321%2C0611101235%2C0611105893%2C0611102436%2C0611102363 HTTP/1.1
+Host: devapi.klikbca.com
+Accept: */*
+Content-Type: application/json
+Authorization: Bearer l4ORMZJwCzMXwmoCAj7FU8LQ26bPjZRx94QQ8uoyYAubYx75D78RT1
+X-BCA-Key: dcc99ba6-3b2f-479b-9f85-86a09ccaaacf
+X-BCA-Timestamp: 2018-11-13T10:01:08.000+07:00
+X-BCA-Signature: 41f2e65f00e2ccaac7cc77631903bbbe29cae292cecf5daa4cf8e2a9ee705799
+
+< HTTP/1.1 401 Unauthorized
+< Date: Tue, 13 Nov 2018 03:01:08 GMT
+< Server: 
+< Connection: close
+< X-CorrelationID: Id-743eea5b798dec8e6068b7a1 0
+< Accept: */*
+< Host: devapi.klikbca.com
+< IP-Destination: 10.20.219.147
+< IP-Source: 10.20.219.143
+< WWW-Authenticate: Bearer realm="DefaultRealm",error="invalid_token",error_description="Unable to find the access token in persistent storage."
+< X-BCA-Key: dcc99ba6-3b2f-479b-9f85-86a09ccaaacf
+< X-BCA-Signature: 41f2e65f00e2ccaac7cc77631903bbbe29cae292cecf5daa4cf8e2a9ee705799
+< X-BCA-Timestamp: 2018-11-13T10:01:08.000+07:00
+< Content-Type: application/json
+< 
+* Curl_http_done: called premature == 0
+* Closing connection 0

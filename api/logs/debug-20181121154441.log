@@ -1,0 +1,7 @@
+* Hostname devapi.klikbca.com was found in DNS cache
+*   Trying 202.6.215.234...
+* TCP_NODELAY set
+* Connection timed out after 30001 milliseconds
+* Curl_http_done: called premature == 1
+* stopped the pause stream!
+* Closing connection 0

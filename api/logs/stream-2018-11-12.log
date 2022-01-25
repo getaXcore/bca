@@ -1,0 +1,24 @@
+[2018-11-12 15:52:54.000000] BALANCE_REQUEST =>
+
+[2018-11-12 15:52:54.000000] BALANCE_RESPONSE =>
+{"AccountDetailDataSuccess":[{"AccountNumber":"0613005827","Currency":"IDR","Balance":"330531645.93","AvailableBalance":"330531645.93","FloatAmount":"0.00","HoldAmount":"0.00","Plafon":"0.00"}],"AccountDetailDataFailed":[]}
+[2018-11-12 15:54:47.000000] BALANCE_REQUEST =>
+
+[2018-11-12 15:54:47.000000] BALANCE_RESPONSE =>
+{"AccountDetailDataSuccess":[{"AccountNumber":"0613005827","Currency":"IDR","Balance":"330531645.93","AvailableBalance":"330531645.93","FloatAmount":"0.00","HoldAmount":"0.00","Plafon":"0.00"}],"AccountDetailDataFailed":[]}
+[2018-11-12 16:01:59.000] BALANCE_REQUEST =>
+GET /banking/v3/corporates/h2hauto008/accounts/0613005827
+[2018-11-12 16:01:59.000] BALANCE_RESPONSE =>
+{"AccountDetailDataSuccess":[{"AccountNumber":"0613005827","Currency":"IDR","Balance":"330531645.93","AvailableBalance":"330531645.93","FloatAmount":"0.00","HoldAmount":"0.00","Plafon":"0.00"}],"AccountDetailDataFailed":[]}
+[2018-11-12 16:13:44.000] BALANCE_REQUEST =>GET /banking/v3/corporates/h2hauto008/accounts/0613005908%2C0613005878%2C0613005827%2C
+[2018-11-12 16:13:44.000] BALANCE_RESPONSE =>{"AccountDetailDataSuccess":[{"AccountNumber":"0613005908","Currency":"IDR","Balance":"715447277.01","AvailableBalance":"715447277.01","FloatAmount":"0.00","HoldAmount":"0.00","Plafon":"0.00"},{"AccountNumber":"0613005878","Currency":"IDR","Balance":"96865339.34","AvailableBalance":"96865339.34","FloatAmount":"0.00","HoldAmount":"0.00","Plafon":"0.00"},{"AccountNumber":"0613005827","Currency":"IDR","Balance":"330531645.93","AvailableBalance":"330531645.93","FloatAmount":"0.00","HoldAmount":"0.00","Plafon":"0.00"}],"AccountDetailDataFailed":[{"English":"Missing mandatory field AccountNumber","Indonesian":"Field AccountNumber harus diisi","AccountNumber":""}]}
+[2018-11-12 16:17:26.000] BALANCE_REQUEST =>GET /banking/v3/corporates/h2hauto008/accounts/0613005908%2C0613005878%2C0613005827%2C
+[2018-11-12 16:17:26.000] BALANCE_RESPONSE =>{"ErrorCode":"ESB-14-009", "ErrorMessage":{"Indonesian":"Tidak berhak" , "English":"Unauthorized"}}
+[2018-11-12 16:17:29.000] BALANCE_REQUEST =>GET /banking/v3/corporates/h2hauto008/accounts/0613005908%2C0613005878%2C0613005827%2C
+[2018-11-12 16:17:29.000] BALANCE_RESPONSE =>{"AccountDetailDataSuccess":[{"AccountNumber":"0613005908","Currency":"IDR","Balance":"715447277.01","AvailableBalance":"715447277.01","FloatAmount":"0.00","HoldAmount":"0.00","Plafon":"0.00"},{"AccountNumber":"0613005878","Currency":"IDR","Balance":"96865339.34","AvailableBalance":"96865339.34","FloatAmount":"0.00","HoldAmount":"0.00","Plafon":"0.00"},{"AccountNumber":"0613005827","Currency":"IDR","Balance":"330531645.93","AvailableBalance":"330531645.93","FloatAmount":"0.00","HoldAmount":"0.00","Plafon":"0.00"}],"AccountDetailDataFailed":[{"English":"Missing mandatory field AccountNumber","Indonesian":"Field AccountNumber harus diisi","AccountNumber":""}]}
+[2018-11-12 16:18:36.000] BALANCE_REQUEST => GET /banking/v3/corporates/h2hauto008/accounts/0613332607
+[2018-11-12 16:18:36.000] BALANCE_RESPONSE => {"AccountDetailDataSuccess":[{"AccountNumber":"0613332607","Currency":"USD","Balance":"45315.33","AvailableBalance":"45315.33","FloatAmount":"0.00","HoldAmount":"0.00","Plafon":"0.00"}],"AccountDetailDataFailed":[]}
+[2018-11-12 16:20:54.000] BALANCE_REQUEST => GET /banking/v3/corporates/h2hauto008/accounts/0613332607
+[2018-11-12 16:20:54.000] BALANCE_RESPONSE => {"AccountDetailDataSuccess":[{"AccountNumber":"0613332607","Currency":"USD","Balance":"45315.33","AvailableBalance":"45315.33","FloatAmount":"0.00","HoldAmount":"0.00","Plafon":"0.00"}],"AccountDetailDataFailed":[]}
+[2018-11-12 16:24:39.000] BALANCE_REQUEST => GET /banking/v3/corporates/h2hauto008/accounts/0613005908%2C0613005878%2C0613005827%2C
+[2018-11-12 16:24:39.000] BALANCE_RESPONSE => {"AccountDetailDataSuccess":[{"AccountNumber":"0613005908","Currency":"IDR","Balance":"715447277.01","AvailableBalance":"715447277.01","FloatAmount":"0.00","HoldAmount":"0.00","Plafon":"0.00"},{"AccountNumber":"0613005878","Currency":"IDR","Balance":"96865339.34","AvailableBalance":"96865339.34","FloatAmount":"0.00","HoldAmount":"0.00","Plafon":"0.00"},{"AccountNumber":"0613005827","Currency":"IDR","Balance":"330531645.93","AvailableBalance":"330531645.93","FloatAmount":"0.00","HoldAmount":"0.00","Plafon":"0.00"}],"AccountDetailDataFailed":[{"English":"Missing mandatory field AccountNumber","Indonesian":"Field AccountNumber harus diisi","AccountNumber":""}]}

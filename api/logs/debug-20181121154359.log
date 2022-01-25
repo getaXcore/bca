@@ -1,0 +1,6 @@
+*   Trying 202.6.215.234...
+* TCP_NODELAY set
+* Connection timed out after 30000 milliseconds
+* Curl_http_done: called premature == 1
+* stopped the pause stream!
+* Closing connection 0

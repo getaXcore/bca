@@ -1,0 +1,45 @@
+* Hostname in DNS cache was stale, zapped
+*   Trying 202.6.215.234...
+* TCP_NODELAY set
+* Connected to devapi.klikbca.com (202.6.215.234) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: /etc/ssl/certs
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server accepted to use http/1.1
+* Server certificate:
+*  subject: C=ID; L=Jakarta; O=PT Bank Central Asia Tbk; OU=Group Strategic Information Technology; CN=devapi.klikbca.com
+*  start date: Jan 12 00:00:00 2016 GMT
+*  expire date: Mar 20 12:00:00 2019 GMT
+*  subjectAltName: host "devapi.klikbca.com" matched cert's "devapi.klikbca.com"
+*  issuer: C=US; O=DigiCert Inc; CN=DigiCert SHA2 Secure Server CA
+*  SSL certificate verify ok.
+> POST /banking/corporates/transfers HTTP/1.1
+Host: devapi.klikbca.com
+Accept: */*
+Content-Type: application/json
+Authorization: Bearer RO5xqWOh5yO4pWpugQLBoopAPquScmzkZdc2pOdjwNdFXLhhSniMe0
+X-BCA-Key: dcc99ba6-3b2f-479b-9f85-86a09ccaaacf
+X-BCA-Timestamp: 2018-11-14T17:02:57.000+07:00
+X-BCA-Signature: 63c8d3ca028d94cc57c7bc717b6543d079adf77c5b7830361ca16969bcad84f3
+Content-Length: 235
+
+* upload completely sent off: 235 out of 235 bytes
+< HTTP/1.1 400 Bad Request
+< Date: Wed, 14 Nov 2018 10:02:57 GMT
+< X-Rate-Limit: [{"window":25022,"type":"throttle","remaining":9484}]
+< Server: 
+< Connection: close
+< X-CorrelationID: Id-d1f2eb5b3418c3921bfe8fa8 0
+< Accept: */*
+< ClientID: b095ac9d-2d21-42a3-a70c-4781f4570704
+< Host: devapi.klikbca.com
+< X-BCA-Key: dcc99ba6-3b2f-479b-9f85-86a09ccaaacf
+< X-BCA-Signature: 63c8d3ca028d94cc57c7bc717b6543d079adf77c5b7830361ca16969bcad84f3
+< X-BCA-Timestamp: 2018-11-14T17:02:57.000+07:00
+< Content-Type: application/json
+< 
+* Curl_http_done: called premature == 0
+* Closing connection 0

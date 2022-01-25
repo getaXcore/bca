@@ -1,0 +1,44 @@
+* Hostname devapi.klikbca.com was found in DNS cache
+*   Trying 202.6.215.234...
+* TCP_NODELAY set
+* Connected to devapi.klikbca.com (202.6.215.234) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: /etc/ssl/certs
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server accepted to use http/1.1
+* Server certificate:
+*  subject: C=ID; L=Jakarta; O=PT Bank Central Asia Tbk; OU=Group Strategic Information Technology; CN=devapi.klikbca.com
+*  start date: Jan 12 00:00:00 2016 GMT
+*  expire date: Mar 20 12:00:00 2019 GMT
+*  subjectAltName: host "devapi.klikbca.com" matched cert's "devapi.klikbca.com"
+*  issuer: C=US; O=DigiCert Inc; CN=DigiCert SHA2 Secure Server CA
+*  SSL certificate verify ok.
+> GET /banking/v3/corporates/h2hauto008/accounts/0613106160/statements?StartDate=2018-10-13&EndDate=2018-11-13 HTTP/1.1
+Host: devapi.klikbca.com
+Accept: */*
+Content-Type: application/json
+Authorization: Bearer cUrCQKx6U4hOj6ZvDOW4cHpLN4RWojKvtDiL6wu4Z4fZK6VE0eQO9n
+X-BCA-Key: dcc99ba6-3b2f-479b-9f85-86a09ccaaacf
+X-BCA-Timestamp: 2018-11-13T16:16:07.000+07:00
+X-BCA-Signature: c5b35dbfd4b779058e89dfdca35ad9fe8db8569e3092a91eb94bd3dfa76f596a
+
+< HTTP/1.1 401 Unauthorized
+< Date: Tue, 13 Nov 2018 09:16:07 GMT
+< Server: 
+< Connection: close
+< X-CorrelationID: Id-5796ea5bf8945d87cd915e3f 0
+< Accept: */*
+< Host: devapi.klikbca.com
+< IP-Destination: 10.20.219.147
+< IP-Source: 10.20.219.143
+< WWW-Authenticate: Bearer realm="DefaultRealm",error="invalid_token",error_description="Unable to find the access token in persistent storage."
+< X-BCA-Key: dcc99ba6-3b2f-479b-9f85-86a09ccaaacf
+< X-BCA-Signature: c5b35dbfd4b779058e89dfdca35ad9fe8db8569e3092a91eb94bd3dfa76f596a
+< X-BCA-Timestamp: 2018-11-13T16:16:07.000+07:00
+< Content-Type: application/json
+< 
+* Curl_http_done: called premature == 0
+* Closing connection 0
